@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔹 Navbar -->
+<nav class="navbar">
+    <div class="logo">🌦 WeatherApp</div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Forecast</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Weather Forecast</h1>
+
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter City Name">
+        <button onclick="searchCity()">Search</button>
+    </div>
+
+    <div class="weather-card">
+        <div class="icon" id="weatherIcon">☀️</div>
+        <div class="temp" id="temperature">30°C</div>
+        <div id="condition">Sunny</div>
+        <div class="details">
+            Humidity: <span id="humidity">60%</span> |
+            Wind: <span id="wind">12 km/h</span>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="refreshWeather()">Refresh</button>
+        <button onclick="toggleDarkMode()">Dark Mode</button>
+    </div>
+
+    <div class="forecast">
+    <div class="forecast-card">
+        <h3>Mon</h3>
+        <div class="icon">☀️</div>
+        <p>25°C / 32°C</p>
+    </div>
+
+    <div class="forecast-card">
+        <h3>Tue</h3>
+        <div class="icon">⛅</div>
+        <p>24°C / 30°C</p>
+    </div>
+
+    <div class="forecast-card">
+        <h3>Wed</h3>
+        <div class="icon">🌧️</div>
+        <p>22°C / 28°C</p>
+    </div>
+
+    <div class="forecast-card">
+        <h3>Thu</h3>
+        <div class="icon">🌩️</div>
+        <p>23°C / 29°C</p>
+    </div>
+
+    <div class="forecast-card">
+        <h3>Fri</h3>
+        <div class="icon">☁️</div>
+        <p>24°C / 31°C</p>
+    </div>
+
+    <div class="forecast-card">
+        <h3>Sat</h3>
+        <div class="icon">☀️</div>
+        <p>26°C / 34°C</p>
+    </div>
+
+    <div class="forecast-card">
+        <h3>Sun</h3>
+        <div class="icon">🌦️</div>
+        <p>23°C / 30°C</p>
+    </div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
